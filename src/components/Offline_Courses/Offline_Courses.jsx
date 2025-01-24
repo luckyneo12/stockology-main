@@ -173,7 +173,7 @@ const Offline_Courses = () => {
               >
                 Follow us!
                 <a
-                  href="https://instagram.com/ig_stockology?igshid=YmMyMTA2M2Y="
+                  href="https://instagram.com/stockology_edu"
                   target={"_blank"}
                   className="text-white text-2xl ml-5   hover:shadow-xl hover:bg-white hover:text-pink-500 hover:scale-110 transition-all duration-150 p-2 rounded-md"
                 >
@@ -186,13 +186,7 @@ const Offline_Courses = () => {
                 >
                   <FaFacebookF />
                 </a>
-                <a
-                  href="https://t.me/STOC_KOLOGY"
-                  target={"_blank"}
-                  className="text-white text-2xl  hover:text-blue-600 hover:bg-white   hover:shadow-xl hover:scale-110 transition-all duration-150 p-2 rounded-md"
-                >
-                  <FaTelegramPlane />
-                </a>
+              
                 <a
                   href="https://www.youtube.com/@stockologyy"
                   className="text-white text-2xl hover:text-red-600   hover:shadow-xl hover:bg-white  hover:scale-110 transition-all duration-150 p-2 rounded-md"
@@ -207,13 +201,7 @@ const Offline_Courses = () => {
                 >
                   <FaLinkedinIn />
                 </a>
-                <a
-                  href="https://twitter.com/stockologyyy?t=r87T8cwTePPMHqsQGqU_QA&s=09"
-                  target={"_blank"}
-                  className="text-white text-2xl  hover:bg-white hover:text-blue-600  hover:shadow-xl hover:scale-110 transition-all duration-150 p-2 rounded-md"
-                >
-                  <AiOutlineTwitter />
-                </a>
+              
               </Heading>
               <Heading
                 className=" text-white "
