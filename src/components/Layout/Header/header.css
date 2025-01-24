@@ -1,0 +1,125 @@
+  .Header-container {
+    padding: 0px 30px;
+    /* max-width: 1440px; */
+    margin: auto;
+    background-color: transparent;
+  }
+  .nav {
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+  }
+  .toggleBtn {
+    display: none;
+    color: cornflowerblue;
+  }
+  .button_drop_shadow {
+    box-shadow: #00ff69;
+    border-radius: 100px;
+  }
+  .Header-container {
+    background-color: transparent;
+  
+  }
+
+  /* .btn{
+      z-index: 10;
+      position:relative;
+    } */
+  .ourstratgyCard {
+    box-shadow: (5, 10, 3, '#3B82F6');
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
+  .nav_Link {
+    font-size: 20px;
+    color: #193766;
+    margin: 0px 26px;
+  }
+  .active {
+    font-weight: bold;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  nav.list {
+    align-items: center;
+    display: flex;
+  }
+  .Header-container {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1072px) {
+    .toggleBtn {
+      display: block;
+    }
+    .Header-container {
+      background-color: white;
+    }
+
+    .list a {
+      display: none;
+    }
+
+    .nav_Link {
+      font-size: 18px;
+      color: #193766;
+      /* display: none; */
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .nav_Link {
+      font-size: 15px;
+      color: #193766;
+    }
+  }
+
+  @media screen and (max-width: 1072px) {
+    .mobile-nav {
+      display: flex;
+      /* height: 100vh; */
+      position: absolute;
+      top: 0;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      height: 60vh;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 12;
+      left: 0;
+    }
+    .toggleBtn {
+      display: block;
+      position: absolute;
+      top: 30px;
+      right: 2%;
+    }
+    .whyonlyus::before {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 476px) {
+    .toggleBtn {
+      display: block;
+      position: absolute;
+      top: 5%;
+      right: 2%;
+      width: fit-content;
+    }
+  }
+  .navactive{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 30px 0px rgb(0 0 0 / 40%);
+
+    z-index: 10;
+    
+  
+  }

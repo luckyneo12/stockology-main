@@ -1,0 +1,10 @@
+.offline_courses_bg {
+  background: url("../../assets/offline_courses_main.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: ; */
+  /* background-color: #193766; */
+}
+.card_hover:hover {
+  color: white;
+}

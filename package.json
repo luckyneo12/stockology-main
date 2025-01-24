@@ -1,0 +1,90 @@
+{
+  "name": "stockology",
+  "version": "1.0.0",
+  "description": "Created By Amaan",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "manish kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/react": "^2.5.1",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@grammarly/editor-sdk-react": "^2.3.9",
+    "@mui/material": "^5.14.20",
+    "@mui/x-data-grid": "^6.19.6",
+    "@mui/x-data-grid-generator": "^6.18.4",
+    "@mui/x-data-grid-pro": "^6.18.4",
+    "@nextui-org/react": "^1.0.0-beta.12",
+    "@react-three/drei": "^9.78.1",
+    "@react-three/fiber": "^8.13.4",
+    "@reduxjs/toolkit": "^1.9.2",
+    "@sl-codeblaster/react-3d-animated-card": "^1.0.8",
+    "@splinetool/r3f-spline": "^1.0.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.383",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.6.2",
+    "buffer": "^6.0.3",
+    "canvas-confetti": "^1.6.0",
+    "chart.js": "^4.2.1",
+    "confetti": "^1.1.5",
+    "d3": "^7.8.5",
+    "dayjs": "^1.11.7",
+    "framer": "^2.3.0",
+    "framer-motion": "^9.0.3",
+    "lottie-react": "^2.4.0",
+    "nse-data": "^1.0.4",
+    "protected-route-react": "^1.0.1",
+    "protobufjs": "^7.2.5",
+    "react": "^18.2.0",
+    "react-animated-3d-card": "^1.0.2",
+    "react-chartjs-2": "^5.2.0",
+    "react-datepicker": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.0",
+    "react-html-table-to-excel-3": "^3.0.1",
+    "react-icons": "^4.7.1",
+    "react-iframe": "^1.8.5",
+    "react-lottie": "^1.2.4",
+    "react-player": "^2.12.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "^5.0.1",
+    "react-spring": "^9.7.2",
+    "react-spring-3d-carousel": "^1.3.4",
+    "stock-nse-india": "^1.1.4",
+    "styled-components": "^5.3.5",
+    "swiper": "^9.4.1",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.6"
+  }
+}

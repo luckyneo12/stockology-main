@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <filter id="Ellipse_214" x="0" y="0" width="75" height="75" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feFlood flood-opacity="0.51"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2373" data-name="Group 2373" transform="translate(2373.5 -1819.5)">
+    <circle id="Ellipse_213" data-name="Ellipse 213" cx="35" cy="35" r="35" transform="translate(-2371 1822)" fill="#dc2626"/>
+    <g transform="matrix(1, 0, 0, 1, -2373.5, 1819.5)" filter="url(#Ellipse_214)">
+      <circle id="Ellipse_214-2" data-name="Ellipse 214" cx="30" cy="30" r="30" transform="translate(7.5 7.5)" fill="#fff"/>
+    </g>
+    <g id="Group_2368" data-name="Group 2368" transform="translate(2768 -1230)">
+      <rect id="Rectangle_1875" data-name="Rectangle 1875" width="34" height="34" transform="translate(-5121 3070)" fill="none"/>
+      <g id="Group_2367" data-name="Group 2367" transform="translate(-43)">
+        <g id="Group_2366" data-name="Group 2366">
+          <rect id="Rectangle_1870" data-name="Rectangle 1870" width="2" height="12" transform="translate(-5069 3088)"/>
+          <rect id="Rectangle_1871" data-name="Rectangle 1871" width="2" height="15" transform="translate(-5065 3085)"/>
+          <rect id="Rectangle_1872" data-name="Rectangle 1872" width="2" height="18" transform="translate(-5061 3082)"/>
+          <rect id="Rectangle_1873" data-name="Rectangle 1873" width="2" height="15" transform="translate(-5057 3085)"/>
+          <rect id="Rectangle_1874" data-name="Rectangle 1874" width="2" height="20" transform="translate(-5053 3080)"/>
+        </g>
+        <g id="Group_2361" data-name="Group 2361" transform="translate(-5074.961 3074.436)">
+          <rect id="Rectangle_1868" data-name="Rectangle 1868" width="2" height="26" transform="translate(-0.04 -0.436)"/>
+          <rect id="Rectangle_1869" data-name="Rectangle 1869" width="2" height="26" transform="translate(-0.04 25.564) rotate(-90)"/>
+        </g>
+        <ellipse id="Ellipse_239" data-name="Ellipse 239" cx="0.5" rx="0.5" transform="translate(-5057 3082)"/>
+        <g id="Group_2365" data-name="Group 2365">
+          <path id="Path_7099" data-name="Path 7099" d="M-2.344,11.219,1.8,8.238,5.844,4.691,9.782,8,13.8,2.191" transform="translate(-5065.782 3075.012)" fill="none" stroke="#000" stroke-width="0.3"/>
+          <circle id="Ellipse_240" data-name="Ellipse 240" cx="0.25" cy="0.25" r="0.25" transform="translate(-5068.376 3085.981)"/>
+          <circle id="Ellipse_241" data-name="Ellipse 241" cx="0.25" cy="0.25" r="0.25" transform="translate(-5064.25 3082.981)"/>
+          <circle id="Ellipse_242" data-name="Ellipse 242" cx="0.25" cy="0.25" r="0.25" transform="translate(-5060.203 3079.5)"/>
+          <circle id="Ellipse_243" data-name="Ellipse 243" cx="0.25" cy="0.25" r="0.25" transform="translate(-5056.25 3082.731)"/>
+          <circle id="Ellipse_244" data-name="Ellipse 244" cx="0.25" cy="0.25" r="0.25" transform="translate(-5052.25 3076.91)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
