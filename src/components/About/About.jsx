@@ -136,7 +136,7 @@ const About = () => {
             <Manishsharma />
             {/* <Sohanray /> */}
             {/* <Harsh_Rai /> <ArjunBhandari /> */}
-            <Blank />
+            {/* <Blank /> */}
           </div>
         </Container>
         <Box className="  bg-gradient-to-b  from-cyan-800 to-white mt-16 ">

@@ -209,7 +209,7 @@ const AboutSlider = () => {
             fontSize={["xs", "xs", "xs", "xl"]}
             lineHeight={["3", "4", "4", "8"]}
           >
-            <span className=" text-xl md:text-3xl">Portfolio Creation </span>
+            <span className=" text-xl md:text-3xl"> Learn Portfolio Creation </span>
             <div className=" flex items-center gap-2">
               {" "}
               <FiCornerDownRight />
