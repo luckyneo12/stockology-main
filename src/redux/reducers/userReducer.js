@@ -67,6 +67,7 @@ export const userReducer = createReducer(
     loadUserFail: (state, action) => {
       state.loading = false;
       state.isAuthenticated = false;
+      // Only set error if payload is not null (API error vs no API)
       state.error = action.payload;
     },
 

@@ -12,6 +12,11 @@ class ErrorBoundary extends React.Component {
 
   componentDidCatch(error, errorInfo) {
     console.error('Error caught by boundary:', error, errorInfo);
+    
+    // Handle specific initialization errors
+    if (error.message.includes('Cannot access') && error.message.includes('before initialization')) {
+      console.warn('Initialization error detected, this might be due to module loading issues');
+    }
   }
 
   render() {

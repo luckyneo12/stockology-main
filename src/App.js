@@ -53,7 +53,7 @@ import Event from "./components/Events/Event";
 import Screener from "./components/Screener/Screener";
 import StrategyBuilder from "./components/StrategyBuilder/StrategyBuilder";
 import Portfolio from "./components/Porfolio/Portfolio";
-import BhopalPdf from "./components/BhopalPdf";
+import BhopalPdf from "./components/BhopalPdf/BhopalPdfSimple";
 
 function App() {
   window.addEventListener("contextmenu", (e) => {
@@ -75,7 +75,7 @@ function App() {
   };
   const dispatch = useDispatch();
   useEffect(() => {
-    if (error) {
+    if (error && error !== null) {
       toast.error(error);
       dispatch({ type: "clearError" });
     }

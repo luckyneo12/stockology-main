@@ -14,20 +14,41 @@ const BhopalPdf = () => {
   const pdfUrl = '/Stockology Brochure A3 Final Print bhopal.pdf';
 
   useEffect(() => {
+    let isMounted = true;
+    
     const loadPdfJs = async () => {
       try {
+        // Check if we're in browser environment
+        if (typeof window === 'undefined') return;
+        
         const pdfjsLib = await import('pdfjs-dist');
-        pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.mjs`;
+        
+        // Set worker source before any PDF operations
+        if (pdfjsLib.GlobalWorkerOptions) {
+          pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.mjs`;
+        }
 
-        const loadingTask = pdfjsLib.getDocument(pdfUrl);
+        const loadingTask = pdfjsLib.getDocument({
+          url: pdfUrl,
+          cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/cmaps/`,
+          cMapPacked: true,
+        });
+        
         const pdf = await loadingTask.promise;
+        
+        if (!isMounted) return;
+        
         pdfRef.current = pdf;
         setTotalPages(pdf.numPages);
 
         // Render all pages to images (reasonable scale for clarity)
         const renderPages = async () => {
+          if (!isMounted) return;
+          
           const images = [];
           for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+            if (!isMounted) break;
+            
             const page = await pdf.getPage(pageNum);
             const viewport = page.getViewport({ scale: 1.6 });
             const canvas = document.createElement('canvas');
@@ -37,18 +58,27 @@ const BhopalPdf = () => {
             await page.render({ canvasContext: context, viewport }).promise;
             images.push(canvas.toDataURL('image/png'));
           }
-          setPageImages(images);
-          setIsLoading(false);
+          
+          if (isMounted) {
+            setPageImages(images);
+            setIsLoading(false);
+          }
         };
 
         renderPages();
       } catch (error) {
         console.error('Error loading PDF:', error);
-        setIsLoading(false);
+        if (isMounted) {
+          setIsLoading(false);
+        }
       }
     };
 
     loadPdfJs();
+    
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   const onFlip = useCallback((e) => {

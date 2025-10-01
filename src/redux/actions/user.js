@@ -51,12 +51,14 @@ export const loadUser = () => async (dispatch) => {
       `${server}/me`,
       {
         withCredentials: true,
+        timeout: 10000, // 10 second timeout
       }
     );
     dispatch({ type: "loadUserSuccess", payload: data.user });
   } catch (error) {
-    const errorMessage = error.response?.data?.message || "Failed to load user";
-    dispatch({ type: "loadUserFail", payload: errorMessage });
+    console.warn("API not available, continuing without user authentication:", error.message);
+    // Don't show error to user if API is not available
+    dispatch({ type: "loadUserFail", payload: null });
   }
 };
 
