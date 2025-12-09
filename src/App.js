@@ -137,7 +137,7 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="/contact" element={<Contact_page />} />
+          // <Route path="/contact" element={<Contact_page />} />
           <Route path="/screener" element={<Screener />} />
 
           <Route path="/termandcondition" element={<TermAndCondition />} />
@@ -295,7 +295,7 @@ function App() {
                 isAuthenticated={isAuthenticated}
                 isAdmin={user && user.role === "admin"}
               >
-                <Contacts />
+                // <Contacts />
               </ProtectedRoute>
             }
           />
