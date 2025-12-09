@@ -6,7 +6,7 @@ import ForgetPassword from "./components/Auth/ForgetPassword";
 import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
 import ResetPassword from "./components/Auth/ResetPassword";
-import Contact_page from "./components/contact/Contact";
+// import Contact_page from "./components/contact/Contact";
 import Courses from "./components/Courses/Courses";
 import Home from "./components/Home/Home";
 import Footer from "./components/Layout/Footer/Footer";
@@ -36,7 +36,7 @@ import TermAndCondition from "./components/Term/TermAndCondition";
 // import News from "./components/News.jsx/News";
 import LandingPage from "./components/webinar/LandingPage";
 import Webinar from "./components/Admin/webinar/Webinar";
-import Contacts from "./components/Admin/Contacts/Contacts";
+// import Contacts from "./components/Admin/Contacts/Contacts";
 import CreateNotification from "./components/Admin/createnotification/CreateNotification";
 import AllNotifications from "./components/Admin/createnotification/AllNotification";
 import PrivacyPolicy from "./components/Term/PrivacyPolicy";
@@ -103,9 +103,9 @@ function App() {
             path="/"
             element={
               <Home isAuthenticated={isAuthenticated} user={user}>
-                {!isAuthenticated && (
-                  <WebinarPopup closeHandler={closeHandler} />
-                )}
+                // {!isAuthenticated && (
+                //   <WebinarPopup closeHandler={closeHandler} />
+                // )}
               </Home>
             }
           />
